@@ -1,0 +1,112 @@
+/* General Body Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Banner Section */
+.banner {
+  background-color: #25522e;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.1em;
+}
+
+.banner a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.banner a:hover {
+  color: #ddd;
+}
+
+/* Navbar Section */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center navbar items */
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo-container .logo {
+  width: 180px; /* Smaller logo size */
+  height: auto;
+  margin-right: 50px; /* Reduce gap between logo and navbar options */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px; /* Adjust gap between navbar items */
+}
+
+.navbar-links .nav-link {
+  color: #555;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-links .nav-link:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Main Content */
+main {
+  height: calc(100vh - 70px); /* Full viewport height minus navbar height */
+  background-image: url('okoab.png'); /* Set the background image to okoab.png */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-position: center; /* Keep the image centered */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #25522e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Remove gaps between sections */
+header, .banner, main, footer {
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .navbar-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .logo-container .logo {
+      margin-bottom: 10px;
+  }
+}

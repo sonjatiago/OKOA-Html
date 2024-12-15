@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKOA - Art and Layout Selection</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/MainPage/index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Location/location.html">Location</a></li>
+            <li class="nav-item"><a class="nav-link" href="/OurArt/final.html">Our Art</a></li>
+            <li class="nav-item"><a class="nav-link" href="/Contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <main>
+        <h1>Our Art</h1>
+        <section class="gallery">
+            <div class="artwork">
+                <img src="goldencrack1.jpg" alt="Golden Crack Artwork">
+                <h3>Golden Crack</h3>
+                <p>Price: €350</p>
+                <button class="buy-item" data-name="Golden Crack" data-price="350">Buy</button>
+            </div>
+            <div class="artwork">
+                <img src="freedom1.jpg" alt="Freedom Artwork">
+                <h3>Freedom</h3>
+                <p>Price: €400</p>
+                <button class="buy-item" data-name="Freedom" data-price="400">Buy</button>
+            </div>
+            <div class="artwork">
+                <img src="galaxy1.jpg" alt="Galaxy Artwork">
+                <h3>Galaxy</h3>
+                <p>Price: €300</p>
+                <button class="buy-item" data-name="Galaxy" data-price="300">Buy</button>
+            </div>
+        </section>
+
+        <h1 id="select-layout">Select Your Layout</h1>
+        <section class="layout-option">
+            <div class="layout">
+                <input type="checkbox" id="layout1" name="layout" data-name="Layout 1" data-price="250">
+                <label for="layout1">
+                    <img src="layout1.jpg" alt="Layout 1" class="layout-img">
+                    <p>Layout 1 - €250</p>
+                </label>
+            </div>
+            <div class="layout">
+                <input type="checkbox" id="layout2" name="layout" data-name="Layout 2" data-price="200">
+                <label for="layout2">
+                    <img src="layout2.jpg" alt="Layout 2" class="layout-img">
+                    <p>Layout 2 - €200</p>
+                </label>
+            </div>
+            <div class="layout">
+                <input type="checkbox" id="layout3" name="layout" data-name="Layout 3" data-price="200">
+                <label for="layout3">
+                    <img src="layout3.jpg" alt="Layout 3" class="layout-img">
+                    <p>Layout 3 - €200</p>
+                </label>
+            </div>
+        </section>
+        
+
+        <section class="color-options">
+            <label>
+                Color 1:
+                <select id="color1">
+                    <option data-name="Select" data-price="0">Select </option>
+                    <option data-name="Red" data-price="0">Red </option>
+                    <option data-name="Green" data-price="0">Green </option>
+                    <option data-name="Blue" data-price="0">Blue </option>
+                    <option data-name="Yellow" data-price="0">Yellow </option>
+                    <option data-name="Purple" data-price="0">Purple </option>
+                    <option data-name="Orange" data-price="0">Orange </option>
+                    <option data-name="Gold" data-price="0">Gold </option>
+                    <option data-name="Pink" data-price="0">Pink </option>
+                    <option data-name="Silver" data-price="0">Silver </option>
+                    <option data-name="Turquoise" data-price="0">Turquoise </option>
+                    <option data-name="Black" data-price="0">Black </option>
+                </select>
+            </label>
+        
+            <label>
+                Color 2:
+                <select id="color2">
+                    <option data-name="Select" data-price="0">Select </option>
+                    <option data-name="Red" data-price="0">Red </option>
+                    <option data-name="Green" data-price="0">Green </option>
+                    <option data-name="Blue" data-price="0">Blue </option>
+                    <option data-name="Yellow" data-price="0">Yellow </option>
+                    <option data-name="Purple" data-price="0">Purple </option>
+                    <option data-name="Orange" data-price="0">Pink </option>
+                    <option data-name="Gold" data-price="0">Gold </option>
+                    <option data-name="Pink" data-price="0">Pink </option>
+                    <option data-name="Silver" data-price="0">Silver </option>
+                    <option data-name="Turquoise" data-price="0">Turquoise </option>
+                    <option data-name="Black" data-price="0">Black </option>
+                </select>
+            </label>
+        
+            <label>
+                Color 3:
+                <select id="color3">
+                    <option data-name="Select" data-price="0">Select </option>
+                    <option data-name="Red" data-price="0">Red </option>
+                    <option data-name="Green" data-price="0">Green </option>
+                    <option data-name="Blue" data-price="0">Blue </option>
+                    <option data-name="Yellow" data-price="0">Yellow </option>
+                    <option data-name="Purple" data-price="0">Purple </option>
+                    <option data-name="Orange" data-price="0">Pink </option>
+                    <option data-name="Gold" data-price="0">Gold </option>
+                    <option data-name="Pink" data-price="0">Pink </option>
+                    <option data-name="Silver" data-price="0">Silver </option>
+                    <option data-name="Turquoise" data-price="0">Turquoise </option>
+                    <option data-name="Black" data-price="0">Black </option>
+                </select>
+            </label>
+        </section>
+        
+    <!-- Cart Section -->
+    <aside>
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total Price: €<span id="total-price">0.00</span></p>
+        <button id="checkout" disabled>Checkout</button>
+    </aside>
+
+    <script src="final.js"></script>
+</body>
+
+</html>

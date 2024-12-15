@@ -1,0 +1,129 @@
+/* General Body Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  text-align: center;
+  padding-top: 60px; /* Space for fixed navbar */
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 700px; /* Reduced size for a more modern look */
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Main Content */
+main {
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+
+/* Section Styling */
+section {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }  
+
+  section {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+  color: #555;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.social-icon {
+    width: 40px;  /* Adjust the size of the Instagram logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Optional: add some space around the logo if necessary */
+    transition: transform 0.3s ease; /* Optional: add hover effect */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }

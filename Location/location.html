@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKOA - Our Location</title>
+    <meta name="description" content="Art page - Find our location in Tallinn, Estonia.">
+    <meta name="author" content="OKOA">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="OKOA - Our Location">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Discover OKOA's location in Tallinn, Estonia.">
+    <meta property="og:image" content="Your Logo Image URL">
+    <meta property="og:url" content="Your Website URL">
+    <meta property="fb:app_id" content="your_app_id">
+
+    <link rel="stylesheet" href="location.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="okoab.png" class="logo" alt="OKOA Logo">
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo3.png" class="logo" alt="OKOA Navbar Logo">
+        </div>
+        <div class="navbar-links">
+            <a href="/MainPage/index.html" class="nav-link">Home</a>
+            <a href="/Location/location.html" class="nav-link">Location</a>
+            <a href="/OurArt/final.html" class="nav-link">Our Art</a>
+            <a href="/Contact/contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <h1>Our Location</h1>
+        <p>Find us in the beautiful city of Tallinn, Estonia.</p>
+
+        <!-- Google Maps Embed -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Tallinn,Estonia"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </main>
+
+    <script src="location.js"></script>
+</body>
+</html>
+
